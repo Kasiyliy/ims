@@ -40,6 +40,13 @@ Route::group(['middleware'=>'auth'], function(){
         Route::get('/spheres/edit/{id}', ['as' => 'sphere.edit' , 'uses' => 'SphereController@edit'])->where('id', '[0-9]+');
         Route::post('/spheres/update/{id}', ['as' => 'sphere.update' , 'uses' => 'SphereController@update'])->where('id', '[0-9]+');
 
+        Route::get('/projects/create', ['as' => 'project.create' , 'uses' => 'ProjectController@create']);
+        Route::post('/projects/store', ['as' => 'project.store' , 'uses' => 'ProjectController@store']);
+        Route::post('/projects/delete/{id}', ['as' => 'project.delete' , 'uses' => 'ProjectController@delete'])->where('id', '[0-9]+');
+        Route::get('/projects/edit/{id}', ['as' => 'project.edit' , 'uses' => 'ProjectController@edit'])->where('id', '[0-9]+');
+        Route::post('/projects/update/{id}', ['as' => 'project.update' , 'uses' => 'ProjectController@update'])->where('id', '[0-9]+');
+
+
     });
     Route::get('/spheres', ['as' => 'sphere.index' , 'uses' => 'SphereController@index']);
 
@@ -49,5 +56,7 @@ Route::group(['middleware'=>'auth'], function(){
     Route::post('/investments/delete/{id}', ['as' => 'investment.delete' , 'uses' => 'InvestmentController@delete'])->where('id', '[0-9]+');
     Route::get('/investments/edit/{id}', ['as' => 'investment.edit' , 'uses' => 'InvestmentController@edit'])->where('id', '[0-9]+');
     Route::post('/investments/update/{id}', ['as' => 'investment.update' , 'uses' => 'InvestmentController@update'])->where('id', '[0-9]+');
+    Route::get('/projects', ['as' => 'project.index' , 'uses' => 'ProjectController@index']);
+
 
 });

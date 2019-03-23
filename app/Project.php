@@ -21,7 +21,7 @@ class Project extends Model
         "business_plan",
         "document",
         "asses_provided",
-        "owner_id",
+        "user_id",
         "sphere_id"
     ];
 
