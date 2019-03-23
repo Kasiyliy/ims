@@ -43,6 +43,13 @@ class User extends Authenticatable
         return $this->role_id == Role::ADMIN_ID;
     }
 
+    public function isInvestor(){
+        return $this->role_id == Role::INVESTOR_ID;
+    }
+
+    public function isEnterpreneur(){
+        return $this->role_id == Role::ENTERPRENEUR_ID;
+    }
 
     public function role(){
         return $this->belongsTo(Role::class);

@@ -43,5 +43,11 @@ Route::group(['middleware'=>'auth'], function(){
     });
     Route::get('/spheres', ['as' => 'sphere.index' , 'uses' => 'SphereController@index']);
 
+    Route::get('/investments', ['as' => 'investment.index' , 'uses' => 'InvestmentController@index']);
+    Route::get('/investments/create', ['as' => 'investment.create' , 'uses' => 'InvestmentController@create']);
+    Route::post('/investments/store', ['as' => 'investment.store' , 'uses' => 'InvestmentController@store']);
+    Route::post('/investments/delete/{id}', ['as' => 'investment.delete' , 'uses' => 'InvestmentController@delete'])->where('id', '[0-9]+');
+    Route::get('/investments/edit/{id}', ['as' => 'investment.edit' , 'uses' => 'InvestmentController@edit'])->where('id', '[0-9]+');
+    Route::post('/investments/update/{id}', ['as' => 'investment.update' , 'uses' => 'InvestmentController@update'])->where('id', '[0-9]+');
 
 });

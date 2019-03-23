@@ -43,8 +43,6 @@
                                                             <div class="modal-body">
                                                                 Вы точно хотите удалить?
                                                                     {{csrf_field()}}
-
-
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Отмена</button>

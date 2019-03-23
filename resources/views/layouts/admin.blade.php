@@ -101,6 +101,13 @@
                         <i class="fa fa-list"></i> <span>Сферы</span>
                     </a>
                 </li>
+
+                <li>
+                    <a href="{{route('investment.index')}}">
+                        <i class="fa fa-money"></i> <span>Инвестиции</span>
+                    </a>
+                </li>
+
                 <li class="header">Настройки</li>
                 <li>
                     <a href="{{route('role.index')}}">
