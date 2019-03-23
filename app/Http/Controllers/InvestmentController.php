@@ -13,10 +13,11 @@ class InvestmentController extends Controller
 {
     public function index()
     {
+        $investments = [];
         $user = Auth::user();
         if ($user->isAdmin()) {
             $investments = Investment::all();
-        } else if ($user->isEnterpreneur()) {
+        } else if ($user->isInvestor()) {
             $investments = Investment::where('user_id', $user->id)->get();
         }
         return view('admin.investments.index', compact("investments"));

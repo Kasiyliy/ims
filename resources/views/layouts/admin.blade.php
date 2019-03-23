@@ -108,13 +108,14 @@
                     </a>
                 </li>
 
-                <li class="header">Настройки</li>
-
                 <li>
                     <a href="{{route('project.index')}}">
                         <i class="fa fa-cube"></i> <span>Проекты</span>
                     </a>
                 </li>
+
+                <li class="header">Настройки</li>
+
                 <li>
                     <a href="{{route('role.index')}}">
                         <i class="fa fa-gears"></i> <span>Роли</span>
