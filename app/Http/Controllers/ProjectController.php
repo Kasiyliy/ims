@@ -54,7 +54,16 @@ class ProjectController extends Controller
             return redirect()->back();
         }
     }
-
+    public function delete($id){
+        $project = Project::find($id);
+        if($project){
+            $project->delete();
+            Session::flash('success' , 'Проект успешно удалена!');
+        }else{
+            Session::flash('error' , 'Проект не существует!');
+        }
+        return redirect()->back();
+    }
 
 
 }
