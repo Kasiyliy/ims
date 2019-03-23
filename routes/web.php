@@ -40,8 +40,17 @@ Route::group(['middleware'=>'auth'], function(){
         Route::get('/spheres/edit/{id}', ['as' => 'sphere.edit' , 'uses' => 'SphereController@edit'])->where('id', '[0-9]+');
         Route::post('/spheres/update/{id}', ['as' => 'sphere.update' , 'uses' => 'SphereController@update'])->where('id', '[0-9]+');
 
+        Route::get('/projects/create', ['as' => 'project.create' , 'uses' => 'ProjectController@create']);
+        Route::post('/projects/store', ['as' => 'project.store' , 'uses' => 'ProjectController@store']);
+        Route::post('/projects/delete/{id}', ['as' => 'project.delete' , 'uses' => 'ProjectController@delete'])->where('id', '[0-9]+');
+        Route::get('/projects/edit/{id}', ['as' => 'project.edit' , 'uses' => 'ProjectController@edit'])->where('id', '[0-9]+');
+        Route::post('/projects/update/{id}', ['as' => 'project.update' , 'uses' => 'ProjectController@update'])->where('id', '[0-9]+');
+
+
     });
     Route::get('/spheres', ['as' => 'sphere.index' , 'uses' => 'SphereController@index']);
+
+    Route::get('/projects', ['as' => 'project.index' , 'uses' => 'ProjectController@index']);
 
 
 });

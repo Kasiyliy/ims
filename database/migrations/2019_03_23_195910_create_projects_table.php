@@ -26,9 +26,9 @@ class CreateProjectsTable extends Migration
             $table->double("overall_price");
             $table->integer("investment_time");
             $table->double("year_profit");
-            $table->boolean("business_plan");
-            $table->boolean("document");
-            $table->boolean("asses_provided");
+            $table->boolean("business_plan")->default(false);
+            $table->boolean("document")->default(false);
+            $table->boolean("asses_provided")->default(false);
 
             $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')
