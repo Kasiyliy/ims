@@ -17,6 +17,7 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name', 'email', 'password',
+        'phone_number', 'role_id'
     ];
 
     /**
@@ -36,4 +37,18 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function isAdmin(){
+        return $this->role_id == Role::ADMIN_ID;
+    }
+
+
+    public function role(){
+        return $this->belongsTo(Role::class);
+    }
+
+    public function projects(){
+        return $this->hasMany(Project::class);
+    }
 }
