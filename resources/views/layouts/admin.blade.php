@@ -7,13 +7,13 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
 
-    <link rel="stylesheet" href="{{asset("admin/bower_components/bootstrap/dist/css/bootstrap.min.css")}}">
-    <link rel="stylesheet" href="{{asset("admin/bower_components/font-awesome/css/font-awesome.min.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("admin/bower_components/bootstrap/dist/css/bootstrap.min.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("admin/bower_components/font-awesome/css/font-awesome.min.css")}}">
 
-    <link rel="stylesheet" href="{{asset("admin/dist/css/AdminLTE.min.css")}}">
-    <link rel="stylesheet" href="{{asset("admin/dist/css/skins/_all-skins.min.css")}}">
-    <link rel="stylesheet" href="{{asset("css/jquery.select.css")}}">
-    <link href="{{ asset('css/toastr.css') }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{asset("admin/dist/css/AdminLTE.min.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("admin/dist/css/skins/_all-skins.min.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{asset("css/jquery.select.css")}}">
+    <link href="{{ asset('css/toastr.css') }}"  type="text/css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css"
           href="{{asset("admin/bower_components/datatable/css/dataTables.bootstrap.min.css")}}"/>
@@ -23,7 +23,7 @@
           href="{{asset("admin/bower_components/datatable/css/scroller.bootstrap.min.css")}}"/>
     <link rel="stylesheet" type="text/css"
           href="{{asset("admin/bower_components/daterangepicker/daterangepicker.css")}}"/>
-    <link href="{{asset("admin/bower_components/select2/select2.css")}}"
+    <link  type="text/css" href="{{asset("admin/bower_components/select2/select2.css")}}"
           el="stylesheet"/>
 
     @yield('styles')
