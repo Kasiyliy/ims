@@ -133,9 +133,11 @@
                                 <h2>Статистика</h2>
                                 <canvas id="barChart" width="100%" height="50%"></canvas>
                             </div>
-                            <div class="col-sm-6">
-                                <canvas id="pieChart" width="100%" height="50%"></canvas>
-                            </div>
+                            @if(count($investments) > 0)
+                                <div class="col-sm-6">
+                                    <canvas id="pieChart" width="100%" height="50%"></canvas>
+                                </div>
+                            @endif
                         </div>
 
 
@@ -161,6 +163,7 @@
             data: {
                 labels: ['Надо собрать', 'Собрано'],
                 datasets: [{
+                    label: 'Статистика по собранной сумме' ,
                     data: [{{$project->overall_price}}, {{$project->sum()}}],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
