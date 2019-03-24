@@ -15,6 +15,9 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Наименование</th>
+                                <th>Доход годовой от проекта</th>
+                                <th>Время инвестирования</th>
+                                <th>Сферы</th>
                                 <th>Действия</th>
                             </tr>
                             </thead>
@@ -23,6 +26,9 @@
                                 <tr>
                                     <td>{{$item->id}}</td>
                                     <td>{{$item->title}}</td>
+                                    <td>{{$item->overall_price}}</td>
+                                    <td>{{$item->investment_time}}</td>
+                                    <td>{{$item->sphere->name}}</td>
                                     <td class="d-flex">
 
                                         <button type="button" class="btn btn-danger btn-xs mr-1" data-toggle="modal" data-target="#exampleModal{{$item->id}}">
