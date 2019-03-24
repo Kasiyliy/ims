@@ -10,7 +10,7 @@
                         <a class="btn btn-success btn-sm" href="{{route('project.create')}}">Добавить</a>
                     </div>
                     <div class="panel-body">
-                        <table class="table table-hover table-responsive">
+                        <table id="dataTable" class="table table-hover table-responsive">
                             <thead>
                             <tr>
                                 <th>ID</th>

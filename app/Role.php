@@ -13,7 +13,7 @@ class Role extends Model
     ];
 
     public const ADMIN_ID = 1;
-    public const ENTERPRENEUR_ID = 2;
+    public const ENTREPRENEUR_ID = 2;
     public const INVESTOR_ID = 3;
 
     public function users(){

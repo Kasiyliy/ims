@@ -47,8 +47,8 @@ class User extends Authenticatable
         return $this->role_id == Role::INVESTOR_ID;
     }
 
-    public function isEnterpreneur(){
-        return $this->role_id == Role::ENTERPRENEUR_ID;
+    public function isEntrepreneur(){
+        return $this->role_id == Role::ENTREPRENEUR_ID;
     }
 
     public function role(){
@@ -57,5 +57,9 @@ class User extends Authenticatable
 
     public function projects(){
         return $this->hasMany(Project::class);
+    }
+
+    public function investments(){
+        return $this->hasMany(Investment::class);
     }
 }

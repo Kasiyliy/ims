@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Investment;
 use App\Project;
 use App\Sphere;
 use Illuminate\Http\Request;
@@ -77,6 +78,17 @@ class ProjectController extends Controller
         }
 
         return view('admin.projects.edit', compact('project','spheres'));
+    }
+
+    public function details($id)
+    {
+        $project = Project::find($id);
+        if (!$project) {
+            Session::flash('error', ' Проект не существует!');
+            return redirect()->back();
+        }
+        $investments = Investment::where('project_id', $project->id)->get();
+        return view('admin.projects.details', compact('project','investments'));
     }
 
     public function update(Request $request, $id)

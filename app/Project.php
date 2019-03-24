@@ -32,4 +32,16 @@ class Project extends Model
     public function sphere(){
         return $this->belongsTo(Sphere::class);
     }
+
+    public function investments(){
+        return $this->hasMany(Investment::class);
+    }
+
+    public function sum(){
+        $sum = 0;
+        foreach($this->investments as $investment){
+            $sum+=$investment->price;
+        }
+        return $sum;
+    }
 }

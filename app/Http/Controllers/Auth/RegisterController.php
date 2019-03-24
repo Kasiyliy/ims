@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Role;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -52,6 +54,8 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'phone_number' => ['required', 'string', 'min:8'],
+            'type' => ['required'],
         ]);
     }
 
@@ -63,10 +67,24 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
+        $id = 0;
+
+        if($data['type'] == 'investor'){
+            $id = Role::INVESTOR_ID;
+        }else if($data['type'] == 'entrepreneur'){
+            $id = Role::ENTREPRENEUR_ID;
+        }
+        if($id!=0){
+            return User::create([
+                'name' => $data['name'],
+                'email' => $data['email'],
+                'password' => Hash::make($data['password']),
+                'phone_number' => ($data['phone_number']),
+                'role_id' => $id
+            ]);
+        }else{
+            Session::flash('error', 'Ошибка!');
+            return redirect()->back();
+        }
     }
 }

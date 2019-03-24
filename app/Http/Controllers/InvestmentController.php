@@ -54,7 +54,7 @@ class InvestmentController extends Controller
     {
         $user = Auth::user();
         $investment = null;
-        if ($user->isEnterpreneur()) {
+        if ($user->isEntrepreneur()) {
             $investment = $this->myInvestment($user->id, $id);
         } else {
             $investment = Investment::find($id);
@@ -74,7 +74,7 @@ class InvestmentController extends Controller
     {
         $user = Auth::user();
         $investment = null;
-        if ($user->isEnterpreneur()) {
+        if ($user->isEntrepreneur()) {
             $investment = $this->myInvestment($user->id, $id);
         } else {
             $investment = Investment::find($id);
@@ -91,7 +91,7 @@ class InvestmentController extends Controller
     {
         $user = Auth::user();
         $investment = null;
-        if ($user->isEnterpreneur()) {
+        if ($user->isEntrepreneur()) {
             $investment = $this->myInvestment($user->id, $id);
         } else {
             $investment = Investment::find($id);

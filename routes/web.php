@@ -19,6 +19,9 @@ Auth::routes();
 
 Route::group(['middleware'=>'auth'], function(){
     Route::get('/home', ['as' => 'home' , 'uses' => 'HomeController@index']);
+    Route::get('/profile', ['as' => 'profile' , 'uses' => 'HomeController@profile']);
+    Route::post('/profile/password/update', ['as' => 'profileUpdatePassword' , 'uses' => 'HomeController@profileUpdatePassword']);
+    Route::post('/profile/update', ['as' => 'profileUpdate' , 'uses' => 'HomeController@profileUpdate']);
 
     Route::group(['middleware' => 'admin'], function(){
 
@@ -40,14 +43,15 @@ Route::group(['middleware'=>'auth'], function(){
         Route::get('/spheres/edit/{id}', ['as' => 'sphere.edit' , 'uses' => 'SphereController@edit'])->where('id', '[0-9]+');
         Route::post('/spheres/update/{id}', ['as' => 'sphere.update' , 'uses' => 'SphereController@update'])->where('id', '[0-9]+');
 
-        Route::get('/projects/create', ['as' => 'project.create' , 'uses' => 'ProjectController@create']);
-        Route::post('/projects/store', ['as' => 'project.store' , 'uses' => 'ProjectController@store']);
-        Route::post('/projects/delete/{id}', ['as' => 'project.delete' , 'uses' => 'ProjectController@delete'])->where('id', '[0-9]+');
-        Route::get('/projects/edit/{id}', ['as' => 'project.edit' , 'uses' => 'ProjectController@edit'])->where('id', '[0-9]+');
-        Route::post('/projects/update/{id}', ['as' => 'project.update' , 'uses' => 'ProjectController@update'])->where('id', '[0-9]+');
-
-
     });
+    Route::get('/projects/create', ['as' => 'project.create' , 'uses' => 'ProjectController@create']);
+    Route::post('/projects/store', ['as' => 'project.store' , 'uses' => 'ProjectController@store']);
+    Route::post('/projects/delete/{id}', ['as' => 'project.delete' , 'uses' => 'ProjectController@delete'])->where('id', '[0-9]+');
+    Route::get('/projects/edit/{id}', ['as' => 'project.edit' , 'uses' => 'ProjectController@edit'])->where('id', '[0-9]+');
+    Route::get('/projects/{id}', ['as' => 'project.details' , 'uses' => 'ProjectController@details'])->where('id', '[0-9]+');
+    Route::post('/projects/update/{id}', ['as' => 'project.update' , 'uses' => 'ProjectController@update'])->where('id', '[0-9]+');
+
+
     Route::get('/spheres', ['as' => 'sphere.index' , 'uses' => 'SphereController@index']);
 
     Route::get('/investments', ['as' => 'investment.index' , 'uses' => 'InvestmentController@index']);

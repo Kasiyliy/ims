@@ -57,7 +57,7 @@
                             </li>
                             <li class="user-footer">
                                 <div class="pull-left">
-                                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                    <a href="{{route('profile')}}" class="btn btn-default btn-flat">Профиль</a>
                                 </div>
                                 <div class="pull-right">
                                     <a class="btn btn-default btn-flat" href="{{ route('logout') }}"
@@ -90,11 +90,11 @@
             </div>
             <ul class="sidebar-menu" data-widget="tree">
                 <li class="header">Главная</li>
-                {{--<li>--}}
-                    {{--<a href="{{route('client.index')}}">--}}
-                        {{--<i class="fa fa-users"></i> <span>Клиенты</span>--}}
-                    {{--</a>--}}
-                {{--</li>--}}
+                <li>
+                    <a href="{{route('home')}}">
+                        <i class="fa fa-bank"></i> <span>На главную</span>
+                    </a>
+                </li>
 
                 <li>
                     <a href="{{route('sphere.index')}}">
@@ -102,18 +102,22 @@
                     </a>
                 </li>
 
+                @if(Auth::user()->isAdmin() || Auth::user()->isInvestor())
                 <li>
                     <a href="{{route('investment.index')}}">
                         <i class="fa fa-money"></i> <span>Инвестиции</span>
                     </a>
                 </li>
+                @endif
+                @if(Auth::user()->isAdmin() || Auth::user()->isEntrepreneur())
+                    <li>
+                        <a href="{{route('project.index')}}">
+                            <i class="fa fa-cube"></i> <span>Проекты</span>
+                        </a>
+                    </li>
+                @endif
 
-                <li>
-                    <a href="{{route('project.index')}}">
-                        <i class="fa fa-cube"></i> <span>Проекты</span>
-                    </a>
-                </li>
-
+                @if(Auth::user()->isAdmin() )
                 <li class="header">Настройки</li>
 
                 <li>
@@ -126,6 +130,7 @@
                         <i class="fa fa-id-card"></i> <span>Сотрудники</span>
                     </a>
                 </li>
+                @endif
             </ul>
         </section>
     </aside>
@@ -150,6 +155,7 @@
 <script src="{{asset("admin/dist/js/adminlte.min.js")}}"></script>
 <script src="{{asset('js/toastr.js')}}"></script>
 <script src="{{asset('js/bootbox.all.min.js')}}"></script>
+<script src="{{asset('js/chart.js')}}"></script>
 
 <script type="text/javascript" src="{{asset("admin/bower_components/datatable/js/jquery.datatables.min.js")}}"></script>
 <script type="text/javascript"

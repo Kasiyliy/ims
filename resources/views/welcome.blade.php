@@ -4,9 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>InvestmentKZ</title>
 
         <!-- Fonts -->
+        <link rel="stylesheet" type="text/css" href="{{asset("admin/bower_components/bootstrap/dist/css/bootstrap.min.css")}}">
+        <link rel="stylesheet" type="text/css" href="{{asset("admin/bower_components/font-awesome/css/font-awesome.min.css")}}">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
@@ -72,26 +74,27 @@
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
                     @endauth
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <img src="{{asset('kaz.png')}}" style="width: 50%" alt="">
+                    <p>Инвестиции Казахстана!</p>
                 </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="m-b-md panel panel-primary">
+                            <h4><a href="{{route('register',['type'=>'investor'])}}" class="btn btn-link">Регистрация Инвесторам</a></h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                        <div class="m-b-md panel panel-danger">
+                            <h4><a href="{{route('register',['type'=>'entrepreneur'])}}" class="btn btn-link text-success">Регистрация Предпренимателям</a></h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

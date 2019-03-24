@@ -7,10 +7,12 @@
                 <div class="panel"  style="padding: 10px;">
                     <div class="panel-header">
                         <h2>Сферы</h2>
-                        <a class="btn btn-success btn-sm" href="{{route('sphere.create')}}">Добавить</a>
+                        @if(Auth::user()->isAdmin() )
+                            <a class="btn btn-success btn-sm" href="{{route('sphere.create')}}">Добавить</a>
+                        @endif
                     </div>
                     <div class="panel-body">
-                        <table class="table table-hover table-responsive" id="dataTable">
+                        <table id="dataTable" class="table table-hover table-responsive" id="dataTable">
                             <thead>
                                 <tr>
                                     <th>ID</th>
@@ -65,4 +67,8 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('datatable')
+    @include('layouts.datatable')
 @endsection
