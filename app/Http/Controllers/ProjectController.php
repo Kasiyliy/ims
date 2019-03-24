@@ -18,7 +18,7 @@ class ProjectController extends Controller
         $user = Auth::user();
         if ($user->isAdmin()) {
             $data = Project::all();
-        } else if ($user->isEnterpreneur()) {
+        } else if ($user->isEntrepreneur()) {
             $data = Project::where('user_id', $user->id)->get();
         }
         return view('admin.projects.index' , compact("data"));
@@ -67,7 +67,7 @@ class ProjectController extends Controller
         $user = Auth::user();
         $spheres = Sphere::all();
         $project = null;
-        if ($user->isEnterpreneur()) {
+        if ($user->isEntrepreneur()) {
             $project = $this->myProject($user->id, $id);
         } else {
             $project = Project::find($id);
@@ -95,7 +95,7 @@ class ProjectController extends Controller
     {
         $user = Auth::user();
         $project = null;
-        if ($user->isEnterpreneur()) {
+        if ($user->isEntrepreneur()) {
             $project = $this->myProject($user->id, $id);
         } else {
             $project = Project::find($id);

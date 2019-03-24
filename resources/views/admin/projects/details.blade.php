@@ -10,7 +10,9 @@
                     </div>
                     <div class="panel-body">
                         <h3>Предпрениматель: {{$project->user->name}}</h3>
-                        @if(\Illuminate\Support\Facades\Auth::user()->isInvestor())
+
+                        @if($project->overallSum >= $project->sum())
+                        @if(\Illuminate\Support\Facades\Auth::user()->isInvestor() )
                             <div class="text-right">
                                 <button type="button" class="btn btn-danger  mr-1" data-toggle="modal"
                                         data-target="#exampleModal">
@@ -48,6 +50,13 @@
                                         </form>
                                     </div>
                                 </div>
+                            </div>
+                        @endif
+                        @else
+                            <div class="alert alert-success">
+                                <ul>
+                                    Проект собрал нужную сумму
+                                </ul>
                             </div>
                         @endif
                         <div class="row">
@@ -115,6 +124,7 @@
                                     <th>Цена</th>
                                     <th>Инвестор</th>
                                     <th>Номер телефона</th>
+                                    <th>Дата трансфера</th>
                                     </thead>
                                     <tbody>
                                     @foreach($investments as $investment)
@@ -123,6 +133,7 @@
                                             <td>{{$investment->price}}</td>
                                             <td>{{$investment->user->name}}</td>
                                             <td>{{$investment->user->phone_number}}</td>
+                                            <td>{{$investment->user->created_at}}</td>
                                         </tr>
                                     @endforeach
                                     </tbody>
