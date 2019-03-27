@@ -32,6 +32,11 @@ class HomeController extends Controller
         return view('home', compact('projects','myProjects'));
     }
 
+    public function advices()
+    {
+        return view('advice');
+    }
+
     public function profile()
     {
         $user = Auth::user();

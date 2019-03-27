@@ -95,6 +95,11 @@
                         <i class="fa fa-bank"></i> <span>На главную</span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{route('advices')}}">
+                        <i class="fa fa-ticket"></i> <span>Советы</span>
+                    </a>
+                </li>
 
                 <li>
                     <a href="{{route('sphere.index')}}">
