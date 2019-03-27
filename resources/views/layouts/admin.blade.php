@@ -102,6 +102,11 @@
                 </li>
 
                 <li>
+                    <a href="{{route('calculator')}}">
+                         <p><i class="fa fa-calculator"></i> Инвестиционный <br>калькулятор</p>
+                    </a>
+                </li>
+                <li>
                     <a href="{{route('sphere.index')}}">
                         <i class="fa fa-list"></i> <span>Сферы</span>
                     </a>

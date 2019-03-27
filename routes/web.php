@@ -20,6 +20,7 @@ Auth::routes();
 Route::group(['middleware'=>'auth'], function(){
     Route::get('/home', ['as' => 'home' , 'uses' => 'HomeController@index']);
     Route::get('/advices', ['as' => 'advices' , 'uses' => 'HomeController@advices']);
+    Route::get('/calculator', ['as' => 'calculator' , 'uses' => 'HomeController@calculator']);
     Route::get('/profile', ['as' => 'profile' , 'uses' => 'HomeController@profile']);
     Route::post('/profile/password/update', ['as' => 'profileUpdatePassword' , 'uses' => 'HomeController@profileUpdatePassword']);
     Route::post('/profile/update', ['as' => 'profileUpdate' , 'uses' => 'HomeController@profileUpdate']);
