@@ -176,7 +176,7 @@
 <script type="text/javascript"
         src="{{asset("admin/bower_components/daterangepicker/daterangepicker.js")}}"></script>
 <script src="{{asset("admin/bower_components/select2/select2.js")}}"></script>
-
+<script src="{{ asset('js/numeral.js') }}"></script>
 <script>
     $.ajaxSetup({
         headers: {
