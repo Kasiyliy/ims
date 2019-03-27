@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f8f48dd-862e-401c-b9e3-5503ce392455" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/projects/details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/projects/details.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/projects/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/projects/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +15,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="DatabaseView">
@@ -46,13 +45,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="ims: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="ims@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="ims: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="users: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -60,33 +52,41 @@
     <session id="-468140188">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="SCHEMA:ims" value="1" />
           <entry key="css" value="1" />
           <entry key="env" value="2" />
           <entry key="js" value="4" />
+          <entry key="json" value="1" />
           <entry key="migrations" value="1" />
-          <entry key="php" value="123" />
-          <entry key="projects" value="2" />
-          <entry key="roles" value="3" />
+          <entry key="php" value="130" />
+          <entry key="projects" value="4" />
+          <entry key="roles" value="5" />
           <entry key="spheres" value="1" />
           <entry key="sql" value="2" />
-          <entry key="users" value="5" />
+          <entry key="users" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="2" />
-          <entry key="Blade" value="66" />
+          <entry key="Blade" value="70" />
           <entry key="CSS" value="1" />
-          <entry key="Database Element" value="12" />
+          <entry key="Database Element" value="19" />
+          <entry key="JSON" value="1" />
           <entry key="JavaScript" value="4" />
-          <entry key="PHP" value="57" />
+          <entry key="PHP" value="60" />
           <entry key="Scratch" value="2" />
+          <entry key="UML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -94,90 +94,95 @@
           <entry key="cell" value="69" />
           <entry key="dummy" value="8" />
           <entry key="env" value="13" />
-          <entry key="php" value="5491" />
+          <entry key="php" value="6066" />
+          <entry key="sql" value="13" />
           <entry key="txt" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="13" />
-          <entry key="Blade" value="3086" />
-          <entry key="PHP" value="2405" />
+          <entry key="Blade" value="3568" />
+          <entry key="PHP" value="2498" />
           <entry key="PLAIN_TEXT" value="42" />
+          <entry key="SQL" value="13" />
           <entry key="Scratch" value="69" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/investments/edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="39" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/projects/details.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="126" column="54" selection-start-line="126" selection-start-column="54" selection-end-line="126" selection-end-column="54" />
+            <state relative-caret-position="393">
+              <caret line="65" column="59" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/projects/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1297">
-              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
-              <folding>
-                <marker date="1553390556713" expanded="true" signature="4769:4947" ph="..." />
-              </folding>
+            <state relative-caret-position="-299">
+              <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8">
-              <caret line="74" column="55" lean-forward="true" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+            <state relative-caret-position="352">
+              <caret line="117" column="26" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/auth/verify.blade.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="81" column="47" selection-start-line="81" selection-start-column="47" selection-end-line="81" selection-end-column="47" />
+            <state relative-caret-position="202">
+              <caret line="30" column="82" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+        <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/projects">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" text="user_id = 3">
+                <filter text="user_id = 3" />
+              </filtering>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="46" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="46" />
+            <state relative-caret-position="431">
+              <caret line="49" column="34" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="58" column="64" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="795">
+              <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -187,11 +192,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="51" column="85" selection-start-line="51" selection-start-column="85" selection-end-line="51" selection-end-column="85" />
+            <state relative-caret-position="750">
+              <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -259,22 +264,22 @@
         <option value="$PROJECT_DIR$/app/Role.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/profile/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/InvestmentController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/investments/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/projects/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/spheres/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ProjectController.php" />
-        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/projects/details.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/projects/details.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/projects/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
       </list>
     </option>
   </component>
@@ -382,7 +387,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -394,6 +398,18 @@
               <item name="ims" type="b2602c69:ProjectViewProjectNode" />
               <item name="ims" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Console" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ims" type="b2602c69:ProjectViewProjectNode" />
@@ -422,6 +438,130 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Middleware" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="factories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="seeds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="daterangepicker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="font-awesome" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ims" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ims" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+              <item name="select2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ims" type="b2602c69:ProjectViewProjectNode" />
@@ -504,12 +644,18 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="pro&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/ProjectController.php&#10;inve&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/InvestmentController.php&#10;user&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/User.php&#10;web&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/routes/web.php&#10;inves&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/InvestmentController.php&#10;homec&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/HomeController.php&#10;register&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/Auth/RegisterController.php&#10;pr&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/ProjectController.php&#10;web.php&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/routes/web.php&#10;home&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/HomeController.php&#10;.env&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/.env&#10;we&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/routes/web.php&#10;projec&#9;null&#9;null&#10;role&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Role.php&#10;admin&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/resources/views/layouts/admin.blade.php&#10;web.p&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/routes/web.php&#10;seeder&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/database/seeds/DatabaseSeeder.php" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="hom&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/HomeController.php&#10;user&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/User.php&#10;pro&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/ProjectController.php&#10;inve&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/InvestmentController.php&#10;web&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/routes/web.php&#10;inves&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/InvestmentController.php&#10;homec&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/HomeController.php&#10;register&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/Auth/RegisterController.php&#10;pr&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/ProjectController.php&#10;web.php&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/routes/web.php&#10;home&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Http/Controllers/HomeController.php&#10;.env&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/.env&#10;we&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/routes/web.php&#10;projec&#9;null&#9;null&#10;role&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/app/Role.php&#10;admin&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/resources/views/layouts/admin.blade.php&#10;web.p&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/routes/web.php&#10;seeder&#9;FILE&#9;file:///Users/air/Desktop/laravel/ims/database/seeds/DatabaseSeeder.php" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -552,7 +698,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553368977518</updated>
-      <workItem from="1553368979608" duration="21148000" />
+      <workItem from="1553368979608" duration="24523000" />
+      <workItem from="1553583314634" duration="150000" />
+      <workItem from="1553583481140" duration="202000" />
+      <workItem from="1553596104514" duration="283000" />
+      <workItem from="1553659313953" duration="2206000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1553369179319</created>
@@ -596,11 +746,25 @@
       <option name="project" value="LOCAL" />
       <updated>1553391135324</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Investment done">
+      <created>1553394012884</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1553394012884</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Investment done">
+      <created>1553440722915</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1553440722915</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21148000" />
+    <option name="totallyTimeSpent" value="27364000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -615,16 +779,10 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="npm" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14957266" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1904762" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.42040816" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32959184" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -632,10 +790,17 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
-      <window_info anchor="right" id="Database" visible="true" weight="0.0952381" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32959184" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32959184" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.15811966" />
+      <window_info anchor="right" id="Remote Host" order="4" weight="0.071428575" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,135 +815,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Investment done" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/UserSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/jquery.select.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/bootbox.all.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/admin/dist/js/adminlte.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/items/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Admin.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="62" column="53" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SphereController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_23_195910_create_projects_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="25" column="44" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_03_23_210327_create_investments_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RoleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="83" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Investment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/users/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/spheres">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/spheres/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/spheres/edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="46" />
-          <folding>
-            <element signature="e#201#222#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/investments/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
-          <folding>
-            <element signature="e#248#270#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/projects">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/projects/create.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="107" column="11" selection-start-line="107" selection-start-column="11" selection-end-line="107" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Project.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
@@ -797,9 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
           <caret line="4573" column="44" selection-start-line="4573" selection-start-column="44" selection-end-line="4573" selection-end-column="44" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -810,16 +843,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/roles">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/profile/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/profile/index.blade.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/admin/users/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -831,9 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
           <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="127" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,19 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
           <caret line="74" column="39" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="39" />
-          <folding>
-            <element signature="e#45#58#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,27 +872,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="58" column="64" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="53" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InvestmentController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
           <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#59#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -899,13 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/projects/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="70" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -927,16 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
-          <folding>
-            <element signature="e#40#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -947,34 +921,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/projects/details.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="126" column="54" selection-start-line="126" selection-start-column="54" selection-end-line="126" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/admin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1297">
-          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
-          <folding>
-            <marker date="1553390556713" expanded="true" signature="4769:4947" ph="..." />
-          </folding>
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8">
-          <caret line="74" column="55" lean-forward="true" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+          <caret line="74" column="55" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -995,13 +952,242 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/users" />
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/roles" />
+    <entry file="uml://DATABASE/6d55e93a-0285-4dda-9961-04f6edb1bc15.SCHEMA:ims">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>6d55e93a-0285-4dda-9961-04f6edb1bc15.SCHEMA:ims</OriginalElement>
+          <nodes>
+            <node x="156.0" y="969.0">6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.investments</node>
+            <node x="752.0" y="0.0">6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.password_resets</node>
+            <node x="0.0" y="235.0">6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.spheres</node>
+            <node x="506.0" y="0.0">6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.migrations</node>
+            <node x="36.25" y="470.0">6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.projects</node>
+            <node x="240.5" y="0.0">6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.roles</node>
+            <node x="214.0" y="169.0">6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.users</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.projects" target="6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.spheres">
+              <point x="-60.75" y="-224.5" />
+              <point x="0.0" y="59.5" />
+            </edge>
+            <edge source="6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.projects" target="6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.users">
+              <point x="60.75" y="-224.5" />
+              <point x="218.5" y="445.0" />
+              <point x="275.75" y="445.0" />
+              <point x="-61.75" y="125.5" />
+            </edge>
+            <edge source="6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.investments" target="6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.projects">
+              <point x="-61.25" y="-81.5" />
+              <point x="217.25" y="944.0" />
+              <point x="157.75" y="944.0" />
+              <point x="0.0" y="224.5" />
+            </edge>
+            <edge source="6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.investments" target="6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.users">
+              <point x="61.25" y="-81.5" />
+              <point x="339.75" y="944.0" />
+              <point x="399.25" y="944.0" />
+              <point x="61.749999999999986" y="125.5" />
+            </edge>
+            <edge source="6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.users" target="6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.roles">
+              <point x="0.0" y="-125.5" />
+              <point x="0.0" y="59.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.4166666666666667" x="472.0" y="566.0" />
+          <SelectedNodes>
+            <node>6d55e93a-0285-4dda-9961-04f6edb1bc15.TABLE:ims.migrations</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="51" column="85" selection-start-line="51" selection-start-column="85" selection-end-line="51" selection-end-column="85" />
+        <state relative-caret-position="750">
+          <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/projects">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/projects">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/projects">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/projects">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="49" column="34" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="58" column="64" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/roles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/roles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/roles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/projects">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" text="user_id = 3">
+            <filter text="user_id = 3" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="30" column="82" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/roles">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/projects/details.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="65" column="59" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/projects/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-299">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="117" column="26" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
         </state>
       </provider>
     </entry>

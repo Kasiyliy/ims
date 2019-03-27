@@ -12,46 +12,47 @@
                         <h3>Предпрениматель: {{$project->user->name}}</h3>
 
                         @if($project->overallSum < $project->sum())
-                        @if(\Illuminate\Support\Facades\Auth::user()->isInvestor() )
-                            <div class="text-right">
-                                <button type="button" class="btn btn-danger  mr-1" data-toggle="modal"
-                                        data-target="#exampleModal">
-                                    Подать заявку на инвестицию <span class="fa fa-mail-forward"></span>
-                                </button>
-                            </div>
+                            @if(\Illuminate\Support\Facades\Auth::user()->isInvestor() )
+                                <div class="text-right">
+                                    <button type="button" class="btn btn-danger  mr-1" data-toggle="modal"
+                                            data-target="#exampleModal">
+                                        Подать заявку на инвестицию <span class="fa fa-mail-forward"></span>
+                                    </button>
+                                </div>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <form method="post" action="{{route('investment.store')}}">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Заявка</h5>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="form-group">
-                                                    <label>Сумма</label>
-                                                    <input type="number" min="0" class="form-control" name="price">
-                                                    <input type="hidden" name="project_id" value="{{$project->id}}">
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <form method="post" action="{{route('investment.store')}}">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Заявка</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
                                                 </div>
-                                                {{csrf_field()}}
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary btn-sm"
-                                                        data-dismiss="modal">Отмена
-                                                </button>
-                                                <input type="submit" value="Подать" class="btn btn-danger btn-sm mr-1">
-                                            </div>
-                                        </form>
+                                                <div class="modal-body">
+                                                    <div class="form-group">
+                                                        <label>Сумма</label>
+                                                        <input type="number" min="0" class="form-control" name="price">
+                                                        <input type="hidden" name="project_id" value="{{$project->id}}">
+                                                    </div>
+                                                    {{csrf_field()}}
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary btn-sm"
+                                                            data-dismiss="modal">Отмена
+                                                    </button>
+                                                    <input type="submit" value="Подать"
+                                                           class="btn btn-danger btn-sm mr-1">
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        @endif
+                            @endif
                         @else
                             <div class="alert alert-success">
                                 <ul>
@@ -60,60 +61,154 @@
                             </div>
                         @endif
                         <div class="row">
-                            <div class="col-sm-6">
 
-                                <div class="form-group">
-                                    <label>Наименование</label>: {{$project->title}}
-                                </div>
-                                <div class="form-group">
-                                    <label>Краткое описание проекта</label>: {{$project->short_description}}
-                                </div>
-                                <div class="form-group">
-                                    <label>Подробное описание проекта </label>: {{$project->description}}
-                                </div>
-                                <div class="form-group">
-                                    <label>Отрасль инвестирования</label>: {{$project->sphere->name}}
-                                </div>
-                                <div class="form-group">
-                                    <label>Дата начала проекта</label>: {{$project->start_date}}
-                                </div>
-                                <div class="form-group">
-                                    <label>Дата окончания проекта</label>: {{$project->end_date}}
-                                </div>
-                                <div class="form-group">
-                                    <label>Страна</label>: {{$project->country}}
-                                </div>
-                                <div class="form-group">
-                                    <label>Город</label>: {{$project->city}}
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label>Общая стоимость проекта</label>: {{$project->overall_price}}
-                                </div>
-                                <div class="form-group">
-                                    <label>Срок инвестирования (лет) </label>: {{$project->investment_time}}
-                                </div>
-                                <div class="form-group">
-                                    <label>Годовая чистая прибыль </label>: {{$project->year_profit}}
-                                </div>
-                                <div class="form-group">
-                                    <label>Описание текущего состояния
-                                        проекта </label>: {{$project->current_description}}
-                                </div>
 
-                                <div class="form-group">
-                                    <label>Есть бизнесплан:</label> {{$project->business_plan == 1 ? 'Есть' : 'Нет'}}
-                                </div>
-                                <div class="form-group">
-                                    <label>Есть лицензии и разрешительные
-                                        документы: </label> {{$project->document == 1  ? 'Есть' : 'Нет'}}
-                                </div>
-                                <div class="form-group">
-                                    <label>Проведена экспертная
-                                        оценка:</label> {{$project->asses_provided == 1  ? 'Есть' : 'Нет'}}
-                                </div>
-                            </div>
+                            <table class="table table-hover">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Наименование</label>:
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->title}}
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Общая стоимость проекта</label>:
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->overall_price}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Краткое описание проекта</label>:
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->short_description}}
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Срок инвестирования (лет) </label>:
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->investment_time}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Подробное описание проекта </label>:
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->description}}
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Годовая чистая прибыль </label>:
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->year_profit}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Отрасль инвестирования</label>:
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->sphere->name}}
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Описание текущего состояния
+                                                проекта </label>:
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->current_description}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Дата начала проекта</label>:
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->start_date}}
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Есть
+                                                бизнесплан:</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->business_plan == 1 ? 'Есть' : 'Нет'}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Дата окончания проекта</label>:
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->end_date}}
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Есть лицензии и разрешительные
+                                                документы: </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->document == 1  ? 'Есть' : 'Нет'}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Страна</label>:
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->country}}
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Проведена экспертная
+                                                оценка:</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->asses_provided == 1  ? 'Есть' : 'Нет'}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <label>Город</label>:
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{$project->city}}
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
@@ -161,7 +256,7 @@
 
 @section('scripts')
     <script>
-        var dynamicColors = function() {
+        var dynamicColors = function () {
             var r = Math.floor(Math.random() * 255);
             var g = Math.floor(Math.random() * 255);
             var b = Math.floor(Math.random() * 255);
@@ -174,7 +269,7 @@
             data: {
                 labels: ['Надо собрать', 'Собрано'],
                 datasets: [{
-                    label: 'Статистика по собранной сумме' ,
+                    label: 'Статистика по собранной сумме',
                     data: [{{$project->overall_price}}, {{$project->sum()}}],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
@@ -198,6 +293,7 @@
             }
         });
 
+
         var ctx2 = document.getElementById('pieChart').getContext('2d');
         new Chart(ctx2, {
             type: 'pie',
@@ -218,7 +314,7 @@
                 // These labels appear in the legend and in the tooltips when hovering different arcs
                 labels: [
                     @foreach($investments as $investment)
-                    '{{$investment->user->name}}',
+                        '{{$investment->user->name}}',
                     @endforeach
                 ]
             },

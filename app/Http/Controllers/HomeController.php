@@ -28,7 +28,8 @@ class HomeController extends Controller
     public function index()
     {
         $projects = Project::orderBy('id', 'desc')->get();
-        return view('home', compact('projects'));
+        $myProjects = Project::where('user_id', Auth::id())->orderBy('id', 'desc')->get();
+        return view('home', compact('projects','myProjects'));
     }
 
     public function profile()

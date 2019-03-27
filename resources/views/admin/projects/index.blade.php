@@ -13,12 +13,26 @@
                         <table id="dataTable" class="table table-hover table-responsive">
                             <thead>
                             <tr>
-                                <th>ID</th>
-                                <th>Наименование</th>
-                                <th>Доход годовой от проекта</th>
-                                <th>Время инвестирования</th>
-                                <th>Сферы</th>
-                                <th>Действия</th>
+                                <th>
+                                    <i>ID</i>
+                                </th>
+                                <th>
+                                    <i>Наименование</i>
+                                </th>
+                                <th>
+                                    <i>Доход годовой от проекта</i>
+                                </th>
+                                <th>
+                                    <i>Время инвестирования</i>
+                                </th>
+                                <th>
+                                    <i>Сферы</i>
+                                </th>
+                                <th>
+                                    <i>
+                                        Действия
+                                    </i>
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
