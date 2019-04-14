@@ -91,8 +91,8 @@
           <entry key="cell" value="69" />
           <entry key="dummy" value="8" />
           <entry key="env" value="13" />
-          <entry key="php" value="9787" />
-          <entry key="sql" value="679" />
+          <entry key="php" value="9805" />
+          <entry key="sql" value="700" />
           <entry key="txt" value="34" />
         </counts>
       </usages-collector>
@@ -101,10 +101,10 @@
           <entry key=".env file" value="13" />
           <entry key="Blade" value="6634" />
           <entry key="HTML" value="3" />
-          <entry key="PHP" value="3135" />
+          <entry key="PHP" value="3153" />
           <entry key="PLAIN_TEXT" value="42" />
           <entry key="SQL" value="28" />
-          <entry key="Scratch" value="735" />
+          <entry key="Scratch" value="756" />
         </counts>
       </usages-collector>
     </session>
@@ -144,8 +144,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProjectController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+            <state relative-caret-position="478">
+              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
               <folding>
                 <element signature="e#44#78#0#PHP" expanded="true" />
               </folding>
@@ -194,8 +194,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d55e93a-0285-4dda-9961-04f6edb1bc15/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="15" selection-end-column="15" />
+            <state relative-caret-position="15">
+              <caret line="1" column="23" selection-end-line="18" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -578,7 +578,7 @@
       <workItem from="1553596104514" duration="283000" />
       <workItem from="1553659313953" duration="4970000" />
       <workItem from="1553665465823" duration="992000" />
-      <workItem from="1555222496796" duration="9903000" />
+      <workItem from="1555222496796" duration="10037000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1553369179319</created>
@@ -685,11 +685,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555235512658</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Investment done">
+      <created>1555235610838</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1555235610838</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41023000" />
+    <option name="totallyTimeSpent" value="41157000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1041,13 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d55e93a-0285-4dda-9961-04f6edb1bc15/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/projects/search.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1065,10 +1065,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d55e93a-0285-4dda-9961-04f6edb1bc15/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="23" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProjectController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+        <state relative-caret-position="478">
+          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
           <folding>
             <element signature="e#44#78#0#PHP" expanded="true" />
           </folding>
