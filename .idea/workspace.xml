@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f8f48dd-862e-401c-b9e3-5503ce392455" name="Default Changelist" comment="Investment done">
+    <list default="true" id="4f8f48dd-862e-401c-b9e3-5503ce392455" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ProjectController.php" afterDir="false" />
     </list>
@@ -91,7 +91,7 @@
           <entry key="cell" value="69" />
           <entry key="dummy" value="8" />
           <entry key="env" value="13" />
-          <entry key="php" value="9779" />
+          <entry key="php" value="9787" />
           <entry key="sql" value="679" />
           <entry key="txt" value="34" />
         </counts>
@@ -101,7 +101,7 @@
           <entry key=".env file" value="13" />
           <entry key="Blade" value="6634" />
           <entry key="HTML" value="3" />
-          <entry key="PHP" value="3127" />
+          <entry key="PHP" value="3135" />
           <entry key="PLAIN_TEXT" value="42" />
           <entry key="SQL" value="28" />
           <entry key="Scratch" value="735" />
@@ -144,8 +144,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProjectController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+            <state relative-caret-position="448">
+              <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
               <folding>
                 <element signature="e#44#78#0#PHP" expanded="true" />
               </folding>
@@ -578,7 +578,7 @@
       <workItem from="1553596104514" duration="283000" />
       <workItem from="1553659313953" duration="4970000" />
       <workItem from="1553665465823" duration="992000" />
-      <workItem from="1555222496796" duration="9805000" />
+      <workItem from="1555222496796" duration="9903000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1553369179319</created>
@@ -678,11 +678,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555234501015</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Investment done">
+      <created>1555235512658</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1555235512658</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40925000" />
+    <option name="totallyTimeSpent" value="41023000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1011,16 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/projects/search.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="84" column="131" selection-start-line="84" selection-start-column="131" selection-end-line="84" selection-end-column="131" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://6d55e93a-0285-4dda-9961-04f6edb1bc15/schema/ims/table/projects">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1044,13 +1041,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/projects/details.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="297" column="25" lean-forward="true" selection-start-line="297" selection-start-column="25" selection-end-line="297" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6d55e93a-0285-4dda-9961-04f6edb1bc15/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1058,10 +1048,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/projects/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="84" column="131" selection-start-line="84" selection-start-column="131" selection-end-line="84" selection-end-column="131" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/projects/details.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="297" column="25" lean-forward="true" selection-start-line="297" selection-start-column="25" selection-end-line="297" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProjectController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        <state relative-caret-position="448">
+          <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
           <folding>
             <element signature="e#44#78#0#PHP" expanded="true" />
           </folding>
