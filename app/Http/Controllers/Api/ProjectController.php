@@ -36,7 +36,7 @@ class ProjectController extends Controller
                     from projects p
                            inner join investments i on p.id = i.project_id
                     where p.sphere_id = $request->sphere_id
-                    group by p.id
+                    group by p.id,p.title,p.overall_price,p.year_profit, p.end_date
                     having ostalos > 0 and god > 0;";
             $data = DB::select($sql);
             return response()->json($data);
