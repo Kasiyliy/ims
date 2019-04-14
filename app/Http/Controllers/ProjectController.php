@@ -24,6 +24,12 @@ class ProjectController extends Controller
         return view('admin.projects.index' , compact("data"));
     }
 
+    public function search(Request $request)
+    {
+        $spheres = Sphere::all();
+        return view('admin.projects.search' , compact("spheres"));
+    }
+
     public function create()
     {
         $spheres = Sphere::all();

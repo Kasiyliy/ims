@@ -7,13 +7,15 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
 
-    <link rel="stylesheet" type="text/css" href="{{asset("admin/bower_components/bootstrap/dist/css/bootstrap.min.css")}}">
-    <link rel="stylesheet" type="text/css" href="{{asset("admin/bower_components/font-awesome/css/font-awesome.min.css")}}">
+    <link rel="stylesheet" type="text/css"
+          href="{{asset("admin/bower_components/bootstrap/dist/css/bootstrap.min.css")}}">
+    <link rel="stylesheet" type="text/css"
+          href="{{asset("admin/bower_components/font-awesome/css/font-awesome.min.css")}}">
 
     <link rel="stylesheet" type="text/css" href="{{asset("admin/dist/css/AdminLTE.min.css")}}">
     <link rel="stylesheet" type="text/css" href="{{asset("admin/dist/css/skins/_all-skins.min.css")}}">
     <link rel="stylesheet" type="text/css" href="{{asset("css/jquery.select.css")}}">
-    <link href="{{ asset('css/toastr.css') }}"  type="text/css" rel="stylesheet">
+    <link href="{{ asset('css/toastr.css') }}" type="text/css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css"
           href="{{asset("admin/bower_components/datatable/css/dataTables.bootstrap.min.css")}}"/>
@@ -23,7 +25,7 @@
           href="{{asset("admin/bower_components/datatable/css/scroller.bootstrap.min.css")}}"/>
     <link rel="stylesheet" type="text/css"
           href="{{asset("admin/bower_components/daterangepicker/daterangepicker.css")}}"/>
-    <link  type="text/css" href="{{asset("admin/bower_components/select2/select2.css")}}"
+    <link type="text/css" href="{{asset("admin/bower_components/select2/select2.css")}}"
           el="stylesheet"/>
 
     @yield('styles')
@@ -103,7 +105,7 @@
 
                 <li>
                     <a href="{{route('calculator')}}">
-                         <p><i class="fa fa-calculator"></i> Инвестиционный <br>калькулятор</p>
+                        <p><i class="fa fa-calculator"></i> Инвестиционный <br>калькулятор</p>
                     </a>
                 </li>
                 <li>
@@ -113,11 +115,16 @@
                 </li>
 
                 @if(Auth::user()->isAdmin() || Auth::user()->isInvestor())
-                <li>
-                    <a href="{{route('investment.index')}}">
-                        <i class="fa fa-money"></i> <span>Инвестиции</span>
-                    </a>
-                </li>
+                    <li>
+                        <a href="{{route('investment.index')}}">
+                            <i class="fa fa-money"></i> <span>Инвестиции</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('project.search')}}">
+                            <i class="fa fa-search"></i> <span>Подбор проектов</span>
+                        </a>
+                    </li>
                 @endif
                 @if(Auth::user()->isAdmin() || Auth::user()->isEntrepreneur())
                     <li>
@@ -128,18 +135,18 @@
                 @endif
 
                 @if(Auth::user()->isAdmin() )
-                <li class="header">Настройки</li>
+                    <li class="header">Настройки</li>
 
-                <li>
-                    <a href="{{route('role.index')}}">
-                        <i class="fa fa-gears"></i> <span>Роли</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{route('user.index')}}">
-                        <i class="fa fa-id-card"></i> <span>Сотрудники</span>
-                    </a>
-                </li>
+                    <li>
+                        <a href="{{route('role.index')}}">
+                            <i class="fa fa-gears"></i> <span>Роли</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('user.index')}}">
+                            <i class="fa fa-id-card"></i> <span>Сотрудники</span>
+                        </a>
+                    </li>
                 @endif
             </ul>
         </section>

@@ -46,6 +46,7 @@ Route::group(['middleware'=>'auth'], function(){
         Route::post('/spheres/update/{id}', ['as' => 'sphere.update' , 'uses' => 'SphereController@update'])->where('id', '[0-9]+');
 
     });
+    Route::get('/projects/search', ['as' => 'project.search' , 'uses' => 'ProjectController@search']);
     Route::get('/projects/create', ['as' => 'project.create' , 'uses' => 'ProjectController@create']);
     Route::post('/projects/store', ['as' => 'project.store' , 'uses' => 'ProjectController@store']);
     Route::post('/projects/delete/{id}', ['as' => 'project.delete' , 'uses' => 'ProjectController@delete'])->where('id', '[0-9]+');
