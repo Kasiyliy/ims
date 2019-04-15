@@ -10,8 +10,7 @@
                     </div>
                     <div class="panel-body">
                         <h3>Предпрениматель: {{$project->user->name}}</h3>
-
-                        @if($project->overallSum < $project->sum())
+                        @if($project->overall_price >= $project->sum())
                             @if(\Illuminate\Support\Facades\Auth::user()->isInvestor() )
                                 <div class="text-right">
                                     <button type="button" class="btn btn-danger  mr-1" data-toggle="modal"
