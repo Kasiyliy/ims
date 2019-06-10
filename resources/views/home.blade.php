@@ -696,14 +696,24 @@
                         <div class="panel-group">
                             <div class="alert alert-warning">
                                 <div class="panel-body">Проекты ждущие сбора средсв</div>
-                                <button class="btn btn-success" onclick="listView()"><i class="fa fa-bars"></i> Лист
-                                </button>
-                                <button class="btn btn-danger" onclick="gridView1()"><i class="fa fa-th-large"></i>
-                                    Клетка
-                                </button>
-                                <button class="btn btn-primary" onclick="gridView2()"><i class="fa fa-th-large"></i>
-                                    Клетка2
-                                </button>
+
+                                <div class="dropdown">
+                                    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Вид <i class="fa fa-arrow-down"></i>
+                                    </button>
+                                    <ul class="dropdown-menu  text-dark  bg-blue" aria-labelledby="dropdownMenuButton">
+                                        <li class="dropdown-item text-dark  m-3 p-3" style="margin: 20px;" onclick="listView()"><i class="fa fa-bars text-dark"></i>
+                                            Лист
+                                        </li>
+                                        <li class="dropdown-item text-dark m-3 p-3" style="margin: 20px;" onclick="gridView1()"><i class="fa fa-th-large text-dark"></i>
+                                            Клетка
+                                        </li>
+                                        <li class=" dropdown-item text-dark m-3 p-3" style="margin: 20px;" onclick="gridView2()"><i class="fa fa-th-large text-dark"></i>
+                                            Клетка2
+                                        </li>
+                                    </ul>
+                                </div>
+
                             </div>
                         </div>
 
